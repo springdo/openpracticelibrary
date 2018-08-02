@@ -46,6 +46,7 @@ The Realtime Retrospective technique was created by Emily Webber[<sup>1</sup>](#
 
 ## Recipe
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RsxTiXuWQSQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Facilitation Materials Needed
 - Drawing paper roll[<sup>4</sup>](#footnote-4). Stickies tend to fall off walls otherwise
