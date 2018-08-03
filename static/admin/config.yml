@@ -70,7 +70,4 @@ collections:
           {label: "Hard", value: "hard"},
           {label: "Very Hard", value: "vhard"}]}
       - {label: "Expected participants", name: "participants", widget: "list", default: []}
-      - {label: "Materials needed", name: "materials", widget: "markdown"}
-      - {label: "Steps to carry our", name: "steps", widget: "markdown"}
-      - {label: "FAQ", name: "faq", widget: "markdown"}
-      - {label: "External Examples", name: "examples", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown"}
