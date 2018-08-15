@@ -59,9 +59,8 @@ collections:
         label: "Authors" # Used in the UI
         format: "toml"
         extension: "toml"
-        folder: "data/content/author" # The path to the folder where the documents are stored
+        file: "data/content/author/{{github}}" # The path to the folder where the documents are stored
         create: true # Allow users to create new documents in this collection
-        slug: "{{github}}" # Filename template, e.g., YYYY-MM-DD-title.md
         fields: # The fields for each document, usually in front matter
           - {label: "Name", name: "name", widget: "string"}
           - {label: "GitHub Username", name: "github", widget: "string"}
