@@ -52,18 +52,17 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "author" # Used in routes, e.g., /admin/collections/blog
     label: "Authors" # Used in the UI
+    format: "toml"
+    extension: "toml"
     editor:
       preview: false
-    files:
-      - name: "author" # Used in routes, e.g., /admin/collections/blog
-        label: "Authors" # Used in the UI
-        format: "toml"
-        extension: "toml"
-        file: "data/content/author/{{github}}" # The path to the folder where the documents are stored
-        create: true # Allow users to create new documents in this collection
-        fields: # The fields for each document, usually in front matter
-          - {label: "Name", name: "name", widget: "string"}
-          - {label: "GitHub Username", name: "github", widget: "string"}
-          - {label: "About you", name: "bio", widget: "text", required: false, pattern: [".{0,120}", "Must have at least 120 characters"]}
-          - {label: "Location", name: "location", widget: "string", required: false}
-          - {label: "WebSite", name: "website", widget: "string", required: false}
+    folder: "data/content/author" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{github}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string", required: false}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "GitHub Username", name: "github", widget: "string"}
+      - {label: "About you", name: "bio", widget: "text", required: false, pattern: [".{0,120}", "Must have at least 120 characters"]}
+      - {label: "Location", name: "location", widget: "string", required: false}
+      - {label: "WebSite", name: "website", widget: "string", required: false}
