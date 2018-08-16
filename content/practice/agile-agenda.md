@@ -1,5 +1,5 @@
 ---
-title: Agile Agenda
+title: Agile Agendaz
 subtitle: A flexible way to manage the agenda for an in person workshop
 date: 2017-05-15T05:00:00.000Z
 authors:
